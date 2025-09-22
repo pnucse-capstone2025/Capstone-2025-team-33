@@ -30,39 +30,31 @@
 ### 3. 시스템 설계
 
 #### 3.1. 시스템 구성도
-+--------------------------+          +------------------------+
-|   Client (Frontend)      |          |   Backend (Server)     |
-|                          |          |                        |
-|   +------------------+   |          |   +------------------+   |
-|   | Flutter App      |   |          |   | FastAPI Server   |   |
-|   | (iOS Simulator)  |<--+-- HTTPS --+-->| (Python)         |   |
-|   +------------------+   |          |   +--------^---------+   |
-|                          |          |            | (API Logic)   |
-+--------------------------+          |            |               |
-                                      |   +--------+---------+   |
-                                      |   | Google Colab Env |   |
-                                      |   | (T4/A100 GPU)    |<--+-- ngrok Public URL --+
-                                      |   +--------^---------+   |                      |
-                                      |            |               |                      |
-                                      | (Model Loading/Inference)  |                      | (HTTPS Tunnel)
-                                      |            |               |                      |
-                                      |   +--------+---------+   |          +-------------------+
-                                      |   | Gemma DPO Model  |   |          | Internet          |
-                                      |   +------------------+   |          +---------+---------+
-                                      |                          |                    |
-                                      |   +------------------+   |                    v
-                                      |   | styles.csv       |<--+-- (Data Access) ---+
-                                      |   | (Clothing Data)  |   |
-                                      |   +------------------+   |
-                                      |                          |
-                                      |   +------------------+   |
-                                      |   | Google Drive     |   |
-                                      |   | (Persistent Storage) |
-                                      |   +--------^---------+   |
-                                      |            |               |
-                                      | (Model & Data Storage)     |
-                                      +--------------------------+
+이 시스템은 클라이언트, 백엔드, 그리고 데이터 저장소로 구성되어 있습니다. 전체적인 데이터 흐름은 다음과 같습니다.
 
+#### 1. 클라이언트 (Client): iOS 시뮬레이터에서 실행되는 Flutter 앱이 사용자와의 상호작용을 담당합니다.
+
+#### 2. 통신 (Communication):
+
+* 클라이언트는 ngrok이 생성한 공개 URL 주소로 HTTPS를 통해 API 요청을 보냅니다.
+
+* ngrok은 외부의 요청을 내부에서 실행 중인 백엔드 서버로 안전하게 연결해주는 터널링(Tunneling) 역할을 합니다.
+
+#### 3. 백엔드 (Backend):
+
+* 백엔드 서버는 Google Colab 환경에서 실행됩니다.
+
+* Colab 환경 내에서는 FastAPI 서버(serve_final.py 파일)가 클라이언트의 요청을 받아 처리합니다.
+
+* 서버는 T4 또는 A100 GPU 상에서 동작하는 Gemma DPO 모델을 사용하여 핵심 기능을 수행합니다.
+
+* 이 모델은 styles.csv 파일에 저장된 의류 데이터를 참조합니다.
+
+#### 4. 영구 저장소 (Persistent Storage):
+
+* 학습된 모델과 데이터는 Google Drive에 영구적으로 저장됩니다.
+
+* 저장되는 주요 파일은 학습된 모델인 **gemma-fashion-dpo-final-v3.zip**과 의류 데이터인 styles.csv 입니다.
 
 #### 3.2. 사용 기술
 * **Frontend:** Flutter, Dart
@@ -111,16 +103,30 @@
     ```
 
 #### 4.3. 디렉토리 구조
-fashion_project/
-├── gemma-fashion-dpo-final-v3/  # 학습된 최종 DPO 모델 폴더
-│   ├── adapter_config.json
-│   └── adapter_model.safetensors
-├── intelligent_outfit_dataset_final.json  # 지능형 학습 데이터
-├── dpo_dataset.jsonl              # DPO 학습 데이터
-├── generate_intelligent_dataset_final.py # 데이터 생성 스크립트
-├── styles.csv                     # 의류 메타데이터
-├── serve_final.py                 # 최종 서버 실행 스크립트 (Colab에서 생성)
-└── test_api.py                    # 로컬 테스트용 스크립트
+
+프로젝트는 클라우드 환경과 로컬 개발 환경으로 나뉩니다.
+
+#### 클라우드 환경 (Google Drive)
+
+* Google Drive의 MyTrive/Colab Notebooks/fashion_project/ 경로 아래에 다음과 같은 파일들이 있습니다.
+
+* gemma-fashion-dpo-final-v3.zip: Colab에서 학습을 완료한 후 업로드할 AI 모델 파일입니다.
+
+* styles.csv: 모델이 참조하는 의류 메타데이터 파일입니다.
+
+* server_v6_5_dpo.ipynb: Google Colab에서 FastAPI 백엔드 서버를 실행하기 위한 Jupyter Notebook 파일입니다.
+
+#### 로컬 개발 환경 (macOS)
+
+* 로컬 머신의 local_project/ 폴더 아래에 다음과 같이 구성됩니다.
+
+* test_api.py: 개발 중인 백엔드 API의 기능을 테스트하기 위한 Python 스크립트입니다.
+
+* flutter_app/: 프론트엔드를 담당하는 Flutter 프로젝트의 루트 디렉토리입니다.
+
+* lib/main.dart: Flutter 앱의 메인 로직이 담긴 Dart 코드 파일입니다.
+
+* pubspec.yaml: Flutter 프로젝트의 의존성 및 설정을 관리하는 파일입니다.
 
 #### 4.4. 산업체 멘토링 의견 및 반영 사항
 
