@@ -1,237 +1,146 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/nRcUn8vA)
-# Template for Capstone
-이 레파지토리는 학생들이 캡스톤 프로젝트 결과물을 위한 레파지토리 생성시에 참고할 내용들을 담고 있습니다.
-1. 레파지토리 생성
-2. 레파지토리 구성
-3. 레파지토리 제출 
-4. README.md 가이드라인
-5. README.md 작성팁
+# AI 기반 개인 맞춤형 패션 추천 시스템
+
+## 1. 프로젝트 배경
+
+### 1.1. 국내외 시장 현황 및 문제점
+기존의 날씨 기반 의상 추천 서비스는 대부분 현재 기온에 따른 단편적인 정보(예: "반팔을 입으세요")를 제공하거나, 사용자의 구매 내역에 기반한 상품 추천에 그치는 경우가 많습니다. 이러한 방식은 사용자가 이미 보유한 옷을 활용하지 못하고, '오늘 저녁 약속'과 같은 구체적인 상황(TPO)이나 개인의 옷장 특성을 전혀 고려하지 못하는 명백한 한계를 가집니다. 이로 인해 사용자는 정보의 홍수 속에서 오히려 "그래서 뭘 입어야 하지?"라는 '결정 피로'를 느끼게 됩니다.
+
+### 1.2. 필요성과 기대효과
+본 프로젝트는 이러한 문제를 해결하기 위해, **'상황 인지(Context-Aware)'** AI 모델을 통해 사용자의 실제 옷장을 기반으로 한 개인 맞춤형 추천을 제공할 필요성에서 출발했습니다. 본 시스템을 통해 사용자는 매일 아침 옷을 고르는 고민을 줄여 시간을 절약하고, 자신이 가진 옷으로 새로운 조합을 발견하여 불필요한 소비를 줄이는 **지속 가능한 패션 생활**을 실천할 수 있습니다. 최종적으로는 사용자의 만족도를 극대화하는 초개인화된 패션 추천 경험을 제공하는 것을 기대합니다.
 
 ---
+## 2. 개발 목표
 
-## 1. 레파지토리 생성
-- [https://classroom.github.com/a/nRcUn8vA](https://classroom.github.com/a/nRcUn8vA)
-- 위 Github Classroom 링크에 접속해 본인 조의 github 레파지토리를 생성하세요.
+### 2.1. 목표 및 세부 내용
+본 프로젝트의 최종 목표는 **'사용자의 옷장과 실시간 상황(날씨, TPO)을 종합적으로 이해하여, 논리적으로 적절하고 스타일리시한 옷 조합을 추천하는 AI 서버를 구축'**하는 것입니다.
 
-<img width="700" alt="깃헙 클래스룸 레포 생성" src="https://github.com/user-attachments/assets/34ca1f43-c2cd-4880-a39e-0dafd889c35f" />
+* **주요 기능:**
+    * **AI 기반 추천 엔진:** 사용자의 옷장, 날씨, 이벤트 정보가 담긴 복합적인 요청을 받아 최적의 옷 조합(ID 목록)과 추천 사유를 반환하는 API.
+    * **상황 인지:** 온도, 날씨 상태(맑음, 비 등), 이벤트의 격식(Formal, Casual 등)을 이해하고 추천에 반영.
+    * **2단계 평가 시스템:** '개별 아이템 평가'와 '최종 조합 평가'를 순차적으로 진행하여 추천의 속도와 정확도를 동시에 확보.
+    * **지능형 폴백:** 추천 가능한 조합이 없을 경우, 기준을 유연하게 완화하여 차선책이라도 제시하는 견고한 시스템.
 
-- 레포지토리 생성 시 팀명은 `TEAM-{조 번호}` 형식으로 생성하세요.
-- 예를 들어, 2025년도 3조의 팀명은 `TEAM-03` 입니다.
-- 이 경우 `Capstone2025-team-03`이란 이름으로 레파지토리가 생성됩니다.
+### 2.2. 기존 서비스 대비 차별성
+본 시스템은 단순한 필터링이나 통계 기반의 추천을 넘어, 최신 언어 모델인 **Google의 Gemma-2B-IT**를 **DPO(Direct Preference Optimization)** 방식으로 미세 조정하여 차별성을 확보했습니다. 이를 통해 모델은 "A 조합이 B 조합보다 더 낫다"와 같은 인간의 미묘한 선호도를 학습하여, 단순 규칙으로는 구현하기 어려운 **상황에 대한 깊은 이해**를 바탕으로 추천을 생성합니다. 또한, AI의 판단과 코드 기반의 상식 규칙을 결합한 **'하이브리드 스코어링'** 및 **'2단계 평가'** 아키텍처는 본 시스템만이 가진 독창적인 설계입니다.
 
----
-
-## 2. 레파지토리 구성
-- 레파지토리 내에 README.md 파일 생성하고 아래의 가이드라인과 작성팁을 참고하여 README.md 파일을 작성하세요. (이 레파지토리의 SAMPLE_README.md 참조)
-- 레파지토리 내에 docs 디렉토리를 생성하고 docs 디렉토리 내에는 과제 수행 하면서 작성한 각종 보고서, 발표자료를 올려둡니다. (이 레파지토리의 docs 디렉토리 참조)
-- 그 밖에 레파지토리의 폴더 구성은 과제 결과물에 따라 자유롭게 구성하되 가급적 코드의 목적이나 기능에 따라 디렉토리를 나누어 구성하세요.
-
----
-
-## 3. 레파지토리 제출 
-
-- **`[주의]` 레파지토리 제출**은 해당 레파지토리의 ownership을 **학과 계정**으로 넘기는 것이므로 되돌릴 수 없습니다.
-- **레파지토리 제출** 전, 더 이상 수정 사항이 없는지 다시 한번 확인하세요.
-- github 레파지토리에서 Settings > General > Danger zone > Transfer 클릭
-  <img src="https://github.com/user-attachments/assets/cb2361d4-e07e-4b5d-9116-aa80dddd8a8b" alt="소유주 변경 경로" width="500" />
-  
-- [ Specify an organization or username ]에 'PNUCSE'를 입력하고 확인 메세지를 입력하세요.
-  <img src="https://github.com/user-attachments/assets/7c63955d-dcfe-4ac3-bdb6-7d2620575f3a" alt="소유주 변경" width="400" />
+### 2.3. 사회적 가치 도입 계획
+본 프로젝트는 사용자가 이미 소유한 의류의 활용도를 극대화하여 새로운 옷의 구매를 줄이도록 유도합니다. 이는 의류 폐기물을 감소시키고 충동적인 소비를 억제하는 **지속 가능한 패션(Sustainable Fashion)** 문화를 장려하는 사회적 가치를 지닙니다.
 
 ---
-
-## 4. README.md 가이드 라인
-- README 파일 작성시에 아래의 5가지 항목의 내용은 필수적으로 포함해야 합니다.
-- 아래의 항목이외에 프로젝트의 이해를 돕기 위한 내용을 추가해도 됩니다.
-- SAMPLE_README.md 이 단순한 형태의 예제이니 참고하세요.
-
-```markdown
-### 1. 프로젝트 배경
-#### 1.1. 국내외 시장 현황 및 문제점
-> 시장 조사 및 기존 문제점 서술
-
-#### 1.2. 필요성과 기대효과
-> 왜 이 프로젝트가 필요한지, 기대되는 효과 등
-
-### 2. 개발 목표
-#### 2.1. 목표 및 세부 내용
-> 전체적인 개발 목표, 주요 기능 및 기획 내용
-
-#### 2.2. 기존 서비스 대비 차별성 
-> 유사 서비스 비교 및 차별점 부각
-
-#### 2.3. 사회적 가치 도입 계획 
-> 프로젝트의 공공성, 지속 가능성, 환경 보호 등
 ### 3. 시스템 설계
+
 #### 3.1. 시스템 구성도
-> 이미지 혹은 텍스트로 시스템 아키텍쳐 작성
->
+[Flutter App Client] <--- HTTPS ---> [ngrok Public URL]
+^                                      | (Tunneling)
+| (API Request/Response)               v
+[Local Test Client (test_api.py)]    [Google Colab Environment]
+|
++--- [FastAPI Server (serve_final.py)]
+|      |
+|      +--- [Gemma DPO Model (on T4 GPU)]
+|      |
+|      +--- [Clothing Data (from styles.csv on G-Drive)]
+|
++--- [Google Drive (Model & Data Storage)]
+
+
 #### 3.2. 사용 기술
-> 프론트엔드, 백엔드, API 등 구체 기술 스택
+* **Frontend:** Flutter, Dart
+* **Backend & AI:**
+    * **Server:** Python 3.12, FastAPI, Uvicorn
+    * **AI Model:** Google Gemma-2B-IT
+    * **Fine-tuning:** PEFT/LoRA, DPO (Direct Preference Optimization) with `trl` library
+    * **Core Libraries:** `transformers`, `torch`, `pandas`, `accelerate`
+* **Deployment:** Google Colab (T4 GPU), Google Drive (Data Persistence), `ngrok` (Tunneling)
 
+---
 ### 4. 개발 결과
+
 #### 4.1. 전체 시스템 흐름도
-> 기능 흐름 설명 및 도식화 가능
->
+1.  **요청 수신:** 클라이언트(Flutter 앱)가 사용자 옷장, 현재 날씨, 이벤트 정보를 담아 Colab 서버의 ngrok 주소로 API를 요청합니다.
+2.  **지능형 필터링:** 서버는 온도와 이벤트(TPO)에 맞춰 1차적으로 엄격한 기준(계절+상황)으로 옷을 필터링합니다. 만약 필수 아이템이 부족하면, 기준을 완화(계절만)하여 2차 필터링을 수행합니다.
+3.  **1차 AI 평가:** 필터링된 개별 의류 아이템 각각에 대해 AI가 상황 적합도 점수를 매깁니다.
+4.  **후보군 생성:** 각 부위별(상의, 하의 등)로 AI 점수가 높은 상위 아이템(Top-K)만을 선별하여, 소수의 고품질 조합 후보군을 생성합니다.
+5.  **2차 AI 평가:** 생성된 고품질 조합들을 다시 AI에게 보내, 조합 전체의 조화로움을 평가하여 최종 AI 점수를 매깁니다.
+6.  **하이브리드 스코어링:** AI 점수에 코드 기반의 '상식 규칙 점수'(예: 추운 날 아우터 보너스)를 합산하여 최종 점수를 계산합니다.
+7.  **응답 반환:** 최종 점수가 가장 높은 조합을 선택하여, 추천된 옷 ID 목록과 설명 등을 JSON 형태로 클라이언트에게 반환합니다.
+
 #### 4.2. 기능 설명 및 주요 기능 명세서
-> 주요 기능에 대한 상세 설명, 각 기능의 입력/출력 및 설명
->
+* **Endpoint:** `POST /recommend_outfit`
+* **Input (Request Body):**
+    ```json
+    {
+      "closet": [15970, 59435, ...],
+      "event": "Business Meeting",
+      "temperature": 15.0,
+      "condition": "Cloudy",
+      "gender": "Men"
+    }
+    ```
+* **Output (Response Body):**
+    ```json
+    {
+      "best_combination": {
+        "description": "상의(Navy Blue Shirts...), 하의(...)",
+        "ids": [15970, 14392, ...]
+      },
+      "explanation": "긍정적: 15.0°C의 Cloudy 날씨에...",
+      "best_score": 1.1896,
+      "processing_time": 5.84
+    }
+    ```
+
 #### 4.3. 디렉토리 구조
->
+fashion_project/
+├── gemma-fashion-dpo-final-v3/  # 학습된 최종 DPO 모델 폴더
+│   ├── adapter_config.json
+│   └── adapter_model.safetensors
+├── intelligent_outfit_dataset_final.json  # 지능형 학습 데이터
+├── dpo_dataset.jsonl              # DPO 학습 데이터
+├── generate_intelligent_dataset_final.py # 데이터 생성 스크립트
+├── styles.csv                     # 의류 메타데이터
+├── serve_final.py                 # 최종 서버 실행 스크립트 (Colab에서 생성)
+└── test_api.py                    # 로컬 테스트용 스크립트
+
 #### 4.4. 산업체 멘토링 의견 및 반영 사항
-> 멘토 피드백과 적용한 사례 정리
 
+* **멘토링 의견:** "구체적인 gemma 버전과 결과 튜닝에 대해서 보완이 필요함"
+* **반영 사항:** "피드백을 반영하여, gemma 버전을 구체화하고 결과 튜닝을 실시하였음"
+
+---
 ### 5. 설치 및 실행 방법
->
+
 #### 5.1. 설치절차 및 실행 방법
-> 설치 명령어 및 준비 사항, 실행 명령어, 포트 정보 등
+1.  **사전 준비:** Google Drive 특정 경로(예: `My Drive/Colab Notebooks/fashion_project/`)에 `gemma-fashion-dpo-final-v3.zip`과 `styles.csv` 파일을 업로드합니다.
+2.  **Colab 노트북 실행:** 제공된 최종 Colab 실행 노트북(`server_v6_5_dpo-6.ipynb` 등)을 엽니다.
+3.  **런타임 설정:** 런타임 유형을 `T4 GPU`로 설정합니다.
+4.  **셀 실행:** 노트북의 모든 셀을 순서대로 실행합니다. 중간에 Hugging Face 및 ngrok 인증 토큰을 입력해야 합니다.
+5.  **서버 실행 확인:** 셀 실행이 완료되면, `https://<...>.ngrok-free.app` 형태의 Public URL이 출력됩니다.
+6.  **포트 정보:** 서버는 Colab 내부적으로 `8000`번 포트를 사용합니다.
+
 #### 5.2. 오류 발생 시 해결 방법
-> 선택 사항, 자주 발생하는 오류 및 해결책 등
+* **`CUDA error` / `bitsandbytes` 오류:** Colab `런타임 > 런타임 다시 시작`으로 환경을 초기화한 뒤, 라이브러리 설치 셀부터 다시 실행하면 대부분 해결됩니다.
+* **`ngrok` 연결 오류:** ngrok 토큰이 올바른지 확인하고, Colab 셀을 재실행하여 새로운 주소를 발급받아 사용합니다.
+* **파일 경로 오류:** Google Drive의 프로젝트 폴더 경로(`PROJECT_DIR`)가 정확한지, 해당 폴더에 필요한 파일들이 모두 있는지 확인합니다.
 
+---
 ### 6. 소개 자료 및 시연 영상
+
 #### 6.1. 프로젝트 소개 자료
-> PPT 등
+*(여기에 PPT 파일 링크나 이미지를 추가하세요.)*
+
 #### 6.2. 시연 영상
-> 영상 링크 또는 주요 장면 설명
+*(여기에 시연 영상 링크나 GIF를 추가하세요.)*
 
+---
 ### 7. 팀 구성
+
 #### 7.1. 팀원별 소개 및 역할 분담
->
+
+* **신상협:** AI 모델 설계 및 백엔드 개발 총괄. Gemma 모델 DPO Fine-tuning, FastAPI 서버 아키텍처 설계 및 구축, 성능 최적화 및 전체 시스템 통합을 주도함.
+* **팀원 B:** 프론트엔드(Flutter) 개발. UI/UX 디자인 및 서버 API와의 연동 기능 구현.
+* **팀원 C:** 데이터 수집 및 전처리. `styles.csv` 데이터 정제 및 DPO 학습 데이터 생성 스크립트 보조.
+
 #### 7.2. 팀원 별 참여 후기
-> 개별적으로 느낀 점, 협업, 기술적 어려움 극복 사례 등
 
-### 8. 참고 문헌 및 출처
-
-```
-
-## 5. README.md 작성팁 
-* 마크다운 언어를 이용해 README.md 파일을 작성할 때 참고할 수 있는 마크다운 언어 문법을 공유합니다.  
-* 다양한 예제와 보다 자세한 문법은 [이 문서](https://www.markdownguide.org/basic-syntax/)를 참고하세요.
-
-### 5.1. 헤더 Header
-```
-# This is a Header 1
-## This is a Header 2
-### This is a Header 3
-#### This is a Header 4
-##### This is a Header 5
-###### This is a Header 6
-####### This is a Header 7 은 지원되지 않습니다.
-```
-<br />
-
-### 5.2. 인용문 BlockQuote
-```
-> This is a first blockqute.
->	> This is a second blockqute.
->	>	> This is a third blockqute.
-```
-> This is a first blockqute.
->	> This is a second blockqute.
->	>	> This is a third blockqute.
-<br />
-
-### 5.3. 목록 List
-* **Ordered List**
-```
-1. first
-2. second
-3. third  
-```
-1. first
-2. second
-3. third
-<br />
-
-* **Unordered List**
-```
-* 하나
-  * 둘
-
-+ 하나
-  + 둘
-
-- 하나
-  - 둘
-```
-* 하나
-  * 둘
-
-+ 하나
-  + 둘
-
-- 하나
-  - 둘
-<br />
-
-### 5.4. 코드 CodeBlock
-* 코드 블럭 이용 '``'
-```
-여러줄 주석 "```" 이용
-"```
-#include <stdio.h>
-int main(void){
-  printf("Hello world!");
-  return 0;
-}
-```"
-
-단어 주석 "`" 이용
-"`Hello world`"
-
-* 큰 따움표(") 없이 사용하세요.
-``` 
-<br />
-
-### 5.5. 링크 Link
-```
-[Title](link)
-[부산대학교 정보컴퓨터공학부](https://cse.pusan.ac.kr/cse/index..do)
-
-<link>
-<https://cse.pusan.ac.kr/cse/index..do>
-``` 
-[부산대학교 정보컴퓨터공학부](https://cse.pusan.ac.kr/cse/index..do)
-
-<https://cse.pusan.ac.kr/cse/index..do>
-<br />
-
-### 5.6. 강조 Highlighting
-```
-*single asterisks*
-_single underscores_
-**double asterisks**
-__double underscores__
-~~cancelline~~
-```
-*single asterisks* <br />
-_single underscores_ <br />
-**double asterisks** <br />
-__double underscores__ <br />
-~~cancelline~~  <br />
-<br />
-
-### 5.7. 이미지 Image
-```
-<img src="image URL" width="600px" title="Title" alt="Alt text"></img>
-![Alt text](image URL "Optional title")
-```
-- 웹에서 작성한다면 README.md 내용 안으로 이미지를 드래그 앤 드롭하면 이미지가 생성됩니다.
-- 웹이 아닌 로컬에서 작성한다면, github issue에 이미지를 드래그 앤 드롭하여 image url 을 얻을 수 있습니다. (URL만 복사하고 issue는 제출 안 함.)
-  <img src="https://github.com/user-attachments/assets/0fe3bff1-7a2b-4df3-b230-cac4ef5f6d0b" alt="이슈에 image 올림" width="600" />
-  <img src="https://github.com/user-attachments/assets/251c6d42-b36b-4ad4-9cfa-fa2cc67a9a50" alt="image url 복사" width="600" />
-
-
-### 5.8. 유튜브 영상 추가
-```markdown
-[![영상 이름](유튜브 영상 썸네일 URL)](유튜브 영상 URL)
-[![부산대학교 정보컴퓨터공학부 소개](http://img.youtube.com/vi/zh_gQ_lmLqE/0.jpg)](https://www.youtube.com/watch?v=zh_gQ_lmLqE)    
-```
-[![부산대학교 정보컴퓨터공학부 소개](http://img.youtube.com/vi/zh_gQ_lmLqE/0.jpg)](https://www.youtube.com/watch?v=zh_gQ_lmLqE)    
-
-- 이때 유튜브 영상 썸네일 URL은 유투브 영상 URL로부터 다음과 같이 얻을 수 있습니다.
-
-- `Youtube URL`: https://www.youtube.com/watch?v={동영상 ID}
-- `Youtube Thumbnail URL`: http://img.youtube.com/vi/{동영상 ID}/0.jpg 
-- 예를 들어, https://www.youtube.com/watch?v=zh_gQ_lmLqE 라고 하면 썸네일의 주소는 http://img.youtube.com/vi/zh_gQ_lmLqE/0.jpg 이다.
-
+* **신상협:** "최신 AI 기술인 DPO를 직접 적용해보며 모델의 성능을 극한으로 끌어올리는 과정이 흥미로웠습니다. 특히, 수많은 기술적 난제를 해결하며 얻은 문제 해결 능력은 큰 자산이 될 것 같습니다. 팀원들과의 협업을 통해 아이디어를 실제 작동하는 서비스로 만들어낸 경험은 매우 값졌습니다."
