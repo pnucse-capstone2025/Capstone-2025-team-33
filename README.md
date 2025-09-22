@@ -31,16 +31,27 @@
 
 #### 3.1. 시스템 구성도
 [Flutter App Client] <--- HTTPS ---> [ngrok Public URL]
+
 ^                                      | (Tunneling)
+
 | (API Request/Response)               v
+
 [Local Test Client (test_api.py)]    [Google Colab Environment]
+
 |
+
 +--- [FastAPI Server (serve_final.py)]
+
 |      |
+
 |      +--- [Gemma DPO Model (on T4 GPU)]
+
 |      |
+
 |      +--- [Clothing Data (from styles.csv on G-Drive)]
+
 |
+
 +--- [Google Drive (Model & Data Storage)]
 
 
