@@ -30,29 +30,38 @@
 ### 3. 시스템 설계
 
 #### 3.1. 시스템 구성도
-[Flutter App Client] <--- HTTPS ---> [ngrok Public URL]
-
-^&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| (Tunneling)
-
-| (API Request/Response)               v
-
-[Local Test Client (test_api.py)]    [Google Colab Environment]
-
-|
-
-+--- [FastAPI Server (serve_final.py)]
-
-|      |
-
-|      +--- [Gemma DPO Model (on T4 GPU)]
-
-|      |
-
-|      +--- [Clothing Data (from styles.csv on G-Drive)]
-
-|
-
-+--- [Google Drive (Model & Data Storage)]
++--------------------------+          +------------------------+
+|   Client (Frontend)      |          |   Backend (Server)     |
+|                          |          |                        |
+|   +------------------+   |          |   +------------------+   |
+|   | Flutter App      |   |          |   | FastAPI Server   |   |
+|   | (iOS Simulator)  |<--+-- HTTPS --+-->| (Python)         |   |
+|   +------------------+   |          |   +--------^---------+   |
+|                          |          |            | (API Logic)   |
++--------------------------+          |            |               |
+                                      |   +--------+---------+   |
+                                      |   | Google Colab Env |   |
+                                      |   | (T4/A100 GPU)    |<--+-- ngrok Public URL --+
+                                      |   +--------^---------+   |                      |
+                                      |            |               |                      |
+                                      | (Model Loading/Inference)  |                      | (HTTPS Tunnel)
+                                      |            |               |                      |
+                                      |   +--------+---------+   |          +-------------------+
+                                      |   | Gemma DPO Model  |   |          | Internet          |
+                                      |   +------------------+   |          +---------+---------+
+                                      |                          |                    |
+                                      |   +------------------+   |                    v
+                                      |   | styles.csv       |<--+-- (Data Access) ---+
+                                      |   | (Clothing Data)  |   |
+                                      |   +------------------+   |
+                                      |                          |
+                                      |   +------------------+   |
+                                      |   | Google Drive     |   |
+                                      |   | (Persistent Storage) |
+                                      |   +--------^---------+   |
+                                      |            |               |
+                                      | (Model & Data Storage)     |
+                                      +--------------------------+
 
 
 #### 3.2. 사용 기술
