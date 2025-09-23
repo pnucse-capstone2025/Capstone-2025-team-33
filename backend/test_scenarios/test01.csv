@@ -1,0 +1,21 @@
+custom id,gender,masterCategory,subCategory,articleType,baseColour,season,year,usage,productDisplayName,image
+,Men,Apparel,Topwear,Shirts,White,Fall,2011,Casual,,white_shirt.jpg
+,Men,Apparel,Topwear,Tshirts,Black,Fall,2011,Casual,,black_tshirt.jpg
+,Men,Apparel,Topwear,Tshirts,Blue,Fall,2011,Casual,,blue_tshirt.jpg
+,Men,Apparel,Topwear,Shirts,Red,Winter,2016,Casual,,red_shirt.jpg
+,Men,Apparel,Topwear,Shirts,Purple,Fall,2011,Casual,,purple_tshirt.jpg
+,Men,Apparel,Topwear,Tshirts,Yellow,Spring,2013,Casual,,yellow_tshirt.jpg
+,Men,Apparel,Topwear,Tshirts,Grey,Summer,2011,Casual,,grey_tshirt.jpg
+,Men,Apparel,Topwear,Shirts,Beige,Summer,2012,Casual,,beige_tshirt.jpg
+,Men,Apparel,Bottomwear,Jeans,Blue,Spring,2013,Casual,,blue_jeans.jpg
+,Men,Apparel,Bottomwear,Shorts,Charcoal,Summer,2012,Casual,,shorts_charcoal.jpg
+,Men,Apparel,Bottomwear,Track Pants,Black,Fall,2011,Casual,,trackpants.jpg
+,Men,Apparel,Bottomwear,Track Pants,Charcoal,Winter,2013,Casual,,
+,Men,Apparel,Outerwear,Denim Jacket,Blue,Fall,2013,Casual,,denim_jacket.jpg
+,Men,Apparel,Outerwear,Light Cardigan,Black,Spring ,2012,Casual,,light_cardigan.jpg
+,Men,Apparel,Outerwear,Bomber Jacket,White,Fall,2011,Casual,,bomber_jacket.jpg
+,Men,Apparel,Outerwear,Trench Coat,Brown,Winter,2013,Casual,,trench_coat.jpg
+,Men,Footwear,Casual Shoes,Casual Shoes,Black,Fall,2011,Casual,,
+,Men,Footwear,Casual Shoes,Casual Shoes,White,Summer,2011,Casual,,
+,Men,Footwear,Casual Shoes,Casual Shoes,White,Spring,2013,Casual,,
+,Men,Footwear,Casual Shoes,Casual Shoes,Black,Winter,2015,Casual,,

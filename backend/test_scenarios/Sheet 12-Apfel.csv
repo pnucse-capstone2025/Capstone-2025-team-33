@@ -1,0 +1,22 @@
+custom id,gender,masterCategory,subCategory,articleType,baseColour,season,year,usage,productDisplayName,Image
+,Woman,Apparel,Topwear,Shirts,Beige,Spring,2025,Casual,,detail_blouse.jpg
+,Woman,Apparel,Topwear,Shirts,White,Spring,2025,Formal,,stripe_shirt.jpg
+,Woman,Apparel,Topwear,Shirts,Blue,Spring,2025,Formal,,style_blouse.jpg
+,Woman,Apparel,Topwear,Shirts,Green,Spring,2025,Casual,,stretch_shirt.jpg
+,Woman,Apparel,Topwear,Shirts,Brown,Spring,2025,Formal,,waist_shirt.jpg
+,Woman,Apparel,Topwear,Tshirts,Black,Spring,2025,Casual,,color_tshirt.jpg
+,Woman,Apparel,Topwear,Tshirts,Pink,Summer,2025,Casual,,cotton_tshirt.jpg
+,Woman,Apparel,Topwear,Tshirts,Navyblue,Summer,2025,Casual,,sleeve_tshirt.jpg
+,Woman,Apparel,Bottomwear,Trousers,Brown,Spring,2025,Formal,,suit_pants.jpg
+,Woman,Apparel,Bottomwear,Trousers,Brown,Spring,2025,Formal,,melange_suitpants.jpg
+,Woman,Apparel,Bottomwear,Jeans,Beige,Spring,2025,Casual,,wide_pants.jpg
+,Woman,Apparel,Bottomwear,Jeans,Grey,Spring,2025,Casual,,leg_jeans.jpg
+,Woman,Apparel,Outerwear,Blazers,Brown,Spring,2025,Formal,,suit_blazer.jpg
+,Woman,Apparel,Outerwear,Blazers,Beige,Spring,2025,Formal,,wool_blazer.jpg
+,Woman,Apparel,Outerwear,Jackets,Brown,Spring,2025,Casual,,leather_jacket.jpg
+,Woman,Apparel,Outerwear,Jackets,Black,Winter,2025,Casual,,color_padding.jpg
+,Woman,Apparel,Outerwear,Jackets,Black,Fall,2025,Casual,,crop_jacket.jpg
+,Woman,Footwear,Shoes,Sandals,Brown,Spring,2025,Casual,,hill_sandal.jpg
+,Woman,Footwear,Shoes,Hills,Black,Spring,2025,Formal,,high_hill.jpg
+,Woman,Footwear,Shoes,Formal Shoes,Brown,Spring,2025,Formal,,loafer.jpg
+,Woman,Footwear,Shoes,Formal Shoes,White,Spring,2025,Formal,,penny_loafer.jpg

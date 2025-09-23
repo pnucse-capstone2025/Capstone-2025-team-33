@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "619861201734",
+    "project_id": "outfitterai-4cc7e",
+    "storage_bucket": "outfitterai-4cc7e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:619861201734:android:f2a5b04cbe7afa0fffcb47",
+        "android_client_info": {
+          "package_name": "com.example.fashion_frontend"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkFTFuD9oVxu0Z7CxO-CedRnhPOgSJLaQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

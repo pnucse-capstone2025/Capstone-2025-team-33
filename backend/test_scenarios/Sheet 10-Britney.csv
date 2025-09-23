@@ -1,0 +1,20 @@
+custom id,gender,masterCategory,subCategory,articleType,baseColour,season,year,usage,productDisplayName,Image
+,Women,Apparel,Topwear,Tees ,White,Summer ,2011,Casual,,white_tee.jpg
+,Women,Apparel,Topwear,Blouse ,Mint Green ,Spring ,2011,Casual,,mintgreen_blouse.jpg
+,Women,Apparel,Topwear,Sweaters,Purple,Fall,2016,Casual,,purple_sweater.jpeg
+,Women,Apparel,Topwear,Cropped Tshirts,Yellow ,Fall,2011,Casual,,yellow_crop.jpeg
+,Women,Apparel,Topwear,Tees,Black ,Summer ,2013,Casual,,black_tee_women.jpg
+,Women,Apparel,Topwear,Off-shoulder Tops ,Pink ,Summer,2011,Casual,,pink_top.jpg
+,Women,Apparel,Topwear,Shirts ,White ,Fall ,2012,Casual,,white_shirt_women.jpg
+,Women,Apparel,Bottomwear,Denim Shorts ,Blue ,Summer ,2013,Casual ,,denim_shorts.jpg
+,Women,Apparel,Bottomwear,Jogger Pants ,Khaki ,Spring ,2012,Casual,,jogger_pants_women.jpg
+,Women,Apparel,Bottomwear,Skirts ,Beige ,Spring ,2011,Casual,,floral_skirt.jpg
+,Women,Apparel,Bottomwear,Tailored Trousers,Black ,Fall ,2013,Casual,,trousers.jpg
+,Women,Apparel ,Bottomwear,Slim Jeans ,Dark Blue ,Fall,2015,Casual,,slim_jeans.jpg
+,Women,Apparel,Outerwear,Coats ,Black ,Winter ,2012,Casual,,black_coat_women.jpg
+,Women,Apparel,Outerwear,Cardigans ,Beige ,Fall,2011,Casual,,cardigan_beige.jpg
+,Women,Apparel,Outerwear,Jackets  ,Grey ,Spring ,2013,Casual,,grey_jacket.jpg
+,Women,Footwear,Casual Shoes,Sneakers,White,Summer,2011,Casual,,white_sneakers.jpg
+,Women,Footwear,Casual Shoes,Espadrilles ,Red ,Spring ,2015,Casual,,red_espadrilles.jpg
+,Women,Footwear,Casual Shoes,Loafers  ,Black ,Fall,2011,Casual,,black_loafers.jpg
+,Women,Footwear,Casual Shoes,Sandals ,Black ,Spring ,2011,Casual,,black_sandals.jpg

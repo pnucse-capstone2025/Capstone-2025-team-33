@@ -1,0 +1,20 @@
+custom id,gender,masterCategory,subCategory,articleType,baseColour,season,year,usage,productDisplayName,Image
+,Men,Apparel,Topwear,Shirts,Beige,Fall,2011,Formal ,,beige_shirt_men.jpg
+,Men,Apparel,Topwear,Shirts ,White,Fall,2011,Formal,,white_shirt.jpg
+,Men,Apparel,Topwear,Sweaters,Grey,Winter,2016,Formal ,,grey_sweater_men.jpg
+,Men,Apparel,Topwear,Shirts,Light blue,Spring,2013,Formal ,,lightblue_shirt_men.jpg
+,Men,Apparel,Topwear,Polo Shirts ,Brown ,Summer,2011,Formal ,,brown_polo.jpg
+,Men,Apparel,Topwear,Shirts ,Black ,Summer,2012,Formal ,,black_shirt_men.jpg
+,Men,Apparel,Bottomwear,Jeans,Dark Blue,Fall,2013,Formal ,,blue_jeans_men.jpg
+,Men,Apparel,Bottomwear,Trousers,Navy,Summer,2012,Formal,,navy_trousers_men.jpg
+,Men,Apparel,Bottomwear,Chinos ,Olive,Spring,2011,Formal ,,olive_chinos.jpg
+,Men,Apparel,Bottomwear,Dress Pants ,Black ,Spring ,2013,Formal,,black_dresspants_men.jpg
+,Men,Apparel ,Bottomwear,Pleated Trousers,Grey ,Winter ,2015,Formal ,,grey_trousers_men.jpg
+,Men,Apparel,Outerwear,Light Cardigans,Beige ,Fall,2012,Formal ,,light_cardigan.jpg
+,Men,Apparel,Outerwear,Leather Jackets,Black ,Fall,2011,Formal,,leather_jacket.jpg
+,Men,Apparel,Outerwear,Trench Coats ,Beige ,Winter,2013,Formal ,,trench_coat.jpg
+,Men,Apparel,Outerwear,Blazers,Grey,Spring,2013,Formal,,grey_blazer_men.jpg
+,Men,Footwear,Formal Shoes,Oxford Shoes,Black,Fall,2011,Formal ,,oxford_shoes.jpg
+,Men,Footwear,Formal Shoes,Chelsea Boots,Grey,Winter,2011,Formal,,chelsea_boots.jpg
+,Men,Footwear,Formal Shoes,Loafers ,Brown ,Spring,2013,Formal ,,brown_loafers.jpg
+,Men,Footwear,Formal Shoes,Boat Shoes ,Blue ,Fall,2015,Formal,,blue_boats.jpg

@@ -1,0 +1,51 @@
+platform :ios, '15.0'  # ★ Firebase iOS SDK 12.x는 iOS 15+ 필요
+ENV['COCOAPODS_DISABLE_STATS'] = 'true'
+
+# ★ Flutter 템플릿 표준: Xcode 구성 매핑
+project 'Runner', {
+  'Debug' => :debug,
+  'Profile' => :release,
+  'Release' => :release,
+}
+
+# ★ Generated.xcconfig에서 FLUTTER_ROOT를 읽어오는 함수
+def flutter_root
+  generated_xcode_build_settings_path = File.expand_path(File.join('..', 'Flutter', 'Generated.xcconfig'), __FILE__)
+  unless File.exist?(generated_xcode_build_settings_path)
+    raise "#{generated_xcode_build_settings_path} must exist. If you're running pod install manually, make sure `flutter pub get` is executed first."
+  end
+  File.foreach(generated_xc_file = generated_xcode_build_settings_path) do |line|
+    matches = line.match(/FLUTTER_ROOT\=(.*)/)
+    return matches[1].strip if matches
+  end
+  raise "FLUTTER_ROOT not found in #{generated_xc_file}"
+end
+
+# ★ Flutter CocoaPods 헬퍼 로드
+require File.expand_path(File.join('packages', 'flutter_tools', 'bin', 'podhelper'), flutter_root)
+
+# ★ Flutter 측 iOS Pod 초기 설정
+flutter_ios_podfile_setup
+
+target 'Runner' do
+  # ★ Firebase 조합 시 안정적인 정적 링크 권장
+  use_frameworks! :linkage => :static
+
+  # ★ Flutter 플러그인(iOS Pod) 일괄 설치 (firebase_core, firebase_auth 등)
+  flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
+
+  target 'RunnerTests' do
+    inherit! :search_paths
+  end
+end
+
+post_install do |installer|
+  # ★ 전체 타깃 배포 타깃을 iOS 15.0으로 통일하고,
+  # ★ 각 타깃별로 flutter_additional_ios_build_settings를 호출해야 함(중요)
+  installer.pods_project.targets.each do |t|
+    t.build_configurations.each do |config|
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '15.0'
+    end
+    flutter_additional_ios_build_settings(t)  # ← ★ 올바른 호출 (installer가 아니라 target 단위)
+  end
+end

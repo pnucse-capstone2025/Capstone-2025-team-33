@@ -1,0 +1,21 @@
+custom id,gender,masterCategory,subCategory,articleType,baseColour,season,year,usage,productDisplayName,Image
+,Women,Apparel,Topwear,Blouses,Purple,Fall,2011,Formal ,,purple_blouse.jpg
+,Women,Apparel,Topwear,Shirts,White,Fall,2011,Formal,,white_shirt_women.jpg
+,Women,Apparel,Topwear,Blouses,White ,Spring,2016,Formal ,,white_blouse.jpg
+,Women,Apparel,Topwear,Sweaters,Grey,Winter ,2011,Formal,,grey_sweater_women.jpg
+,Women,Apparel,Topwear,Shirts,Light blue,Spring,2013,Formal ,,lightblue_shirt_women.jpg
+,Women,Apparel,Topwear,Sleeveless Blouses ,Red,Summer,2011,Formal ,,red_blouse.jpg
+,Women,Apparel,Topwear,Turtlenecks ,Grey ,Winter ,2012,Formal ,,grey_turtleneck.jpg
+,Women,Apparel,Bottomwear,Skirts,Grey,Fall,2013,Formal,,grey_skirt.jpg
+,Women,Apparel,Bottomwear,Wide-leg Linen Pants,White,Summer,2012,Formal,,linen_pants.jpg
+,Women,Apparel,Bottomwear,Jeans,Deep Blue ,Fall,2011,Formal,,blue_jeans.jpg
+,Women,Apparel,Bottomwear,Trousers,Beige ,Summer ,2013,Formal ,,beige_trousers.jpg
+,Women,Apparel,Outerwear,Coats,Beige ,Fall,2012,Formal ,,beige_coat.jpg
+,Women,Apparel,Outerwear,Wool Coats,Black ,Winter,2011,Formal ,,black_coat.jpg
+,Women,Apparel,Outerwear,Cropped Blazers,White ,Spring ,2013,Formal ,,cropped_blazer.jpg
+,Women,Apparel,Outerwear,Longline Coats ,Grey ,Fall ,2013,Formal ,,longline_coat.jpg
+,Women,Footwear,Formal Shoes,Flats ,Nude ,Spring,2011,Formal,,nude_flats.jpg
+,Women,Footwear,Formal Shoes,Loafers,Black ,Fall,2013,Formal ,,black_loafers.jpg
+,Women,Footwear,Formal Shoes,Low Block Heels,Beige ,Summer ,2015,Formal ,,low_heels.jpg
+,Women,Footwear,Formal Shoes,Ankle Boots,Black,Winter ,2011,Formal ,,ankle_boots_black.jpg
+,Women,Footwear,Formal Shoes,Sneakers,White ,Summer,2011,Formal ,,white_sneakers.jpg

@@ -1,0 +1,22 @@
+custom id,gender,masterCategory,subCategory,articleType,baseColour,season,year,usage,productDisplayName,Image
+,Women,Apparel,Topwear,Blouses,White,Fall,2011,Formal ,,white_blouse.jpg
+,Women,Apparel,Topwear,Turtlenecks ,Grey,Winter,2011,Formal,,grey_turtleneck.jpg
+,Women,Apparel,Topwear,Sweaters,Purple,Fall,2016,Casual,,purple_sweater.jpeg
+,Women,Apparel,Topwear,Blouses,Red,Fall,2011,Casual,,red_blouse_long.jpg
+,Women,Apparel,Topwear,Tees,Black ,Summer ,2013,Casual,,black_tee_women.jpg
+,Women,Apparel,Topwear,Sleeveless Blouses ,Red,Summer,2011,Formal ,,red_blouse.jpg
+,Women,Apparel,Topwear,Linen Shirts ,Beige ,Spring,2012,Formal ,,linen_beige.jpg
+,Women,Apparel,Bottomwear,Wide-leg Trousers ,Beige ,Summer ,2013,Formal ,,beige_trousers.jpg
+,Women,Apparel,Bottomwear,Midi Skirts ,White,Spring ,2012,Casual,,midi_skirt.jpg
+,Women,Apparel,Bottomwear,Chinos ,Beige ,Spring ,2011,Casual,,beige_chinos.jpg
+,Women,Apparel,Bottomwear,Tailored Trousers,Black ,Fall ,2013,Formal ,,trousers.jpg
+,Women,Apparel ,Bottomwear,Slim Jeans ,Dark Blue ,Fall,2015,Casual,,slim_jeans.jpg
+,Women,Apparel,Outerwear,Coats ,Black ,Winter ,2012,Casual,,black_coat_women.jpg
+,Women,Apparel,Outerwear,Leather Jackets,Black ,Fall,2011,Casual,,leather_jacket.jpg
+,Women,Apparel,Outerwear,Blazers ,Grey ,Spring ,2013,Formal,,grey_blazer.jpg
+,Women,Apparel,Outerwear,Trench Coats ,Beige ,Fall ,2013,Formal,,trench_coat.jpg
+,Women,Footwear,Casual Shoes,Sneakers,White,Summer,2011,Casual,,white_sneakers.jpg
+,Women,Footwear,Casual Shoes,Ballet flats ,Beige,Spring,2013,Casual,,ballet_flats.jpg
+,Women,Footwear,Casual Shoes,Ankle Boots ,Black,Fall ,2015,Casual,,ankle_boots_black.jpg
+,Women,Footwear,Formal Shoes,Heels ,White ,Fall,2011,Formal ,,white_heels.jpg
+,Women,Footwear,Casual Shoes,Sandals ,Black ,Spring ,2011,Casual ,,black_sandals.jpg

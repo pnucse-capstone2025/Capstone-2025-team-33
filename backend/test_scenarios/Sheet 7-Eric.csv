@@ -1,0 +1,21 @@
+custom id,gender,masterCategory,subCategory,articleType,baseColour,season,year,usage,productDisplayName,Image
+,Men,Apparel,Topwear,Shirts,White,Fall,2011,Casual,,white_shirt.jpg
+,Men,Apparel,Topwear,Tshirts,Black,Fall,2011,Casual,,black_tshirt.jpg
+,Men,Apparel,Topwear,Polo Shirts ,White ,Fall,2011,Casual,,blue_tshirt.jpg
+,Men,Apparel,Topwear,Shirts,Light Blue ,Spring ,2016,Casual,,red_shirt.jpg
+,Men,Apparel,Topwear,Sweaters ,Grey ,Winter ,2011,Casual,,purple_tshirt.jpg
+,Men,Apparel,Topwear,Tshirts,Yellow,Spring,2013,Casual,,yellow_tshirt.jpg
+,Men,Apparel,Topwear,Tshirts,Grey,Summer,2011,Casual,,grey_tshirt.jpg
+,Men,Apparel,Bottomwear,Chinos ,Beige ,Spring,2013,Casual ,,beige_chinos.jpg
+,Men,Apparel,Bottomwear,Cargo Trousers ,Black ,Winter ,2012,Casual,,navy_shorts_men.jpg
+,Men,Apparel,Bottomwear,Jeans ,Black,Fall,2011,Casual,,joggers.jpg
+,Men,Apparel,Bottomwear,Chino Shorts  ,Beige ,Summer ,2013,Casual,,blue_jeans.jpg
+,Men,Apparel ,Bottomwear,Jeans ,Deep Blue ,Fall,2015,Casual,,deepblue_jeans.jpg
+,Men,Apparel,Outerwear,Bomber Jackets ,Grey,Fall,2012,Casual,,zipup.jpg
+,Men,Apparel,Outerwear,Trenches ,Brown ,Spring,2013,Casual,,white_track_jacket.jpg
+,Men,Apparel,Outerwear,Longline Coats ,Black ,Winter ,2013,Casual,,white_track_jacket.jpg
+,Men,Apparel,Outerwear,Trench Coats,Brown,Winter,2013,Casual,,trench_coat.jpg
+,Men,Footwear,Casual Shoes,Leather Boots ,Black,Winter ,2011,Casual,,leather_boots.jpg
+,Men,Footwear,Casual Shoes,Sneakers ,White,Spring ,2011,Casual,,white_sneakers.jpg
+,Men,Footwear,Casual Shoes,Chelsea Boots ,Black ,Fall ,2013,Casual,,chelsea_black_men.jpg
+,Men,Footwear,Casual Shoes,Loafers ,Dark Blue ,Sumer ,2015,Casual,,blue_loafers.jpg
