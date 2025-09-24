@@ -1,0 +1,22 @@
+custom id,gender,masterCategory,subCategory,articleType,baseColour,season,year,usage,productDisplayName,Image
+,Men,Apparel,Topwear,Shirts,White,Fall,2025,Casual,레귤러핏 텍스처드 셔츠,textured_shirt.jpg
+,Men,Apparel,Topwear,Shirts,Chocolate,Fall,2025,Casual,레귤러핏 스탠드 칼라 셔츠,color_shirt.jpg
+,Men,Apparel,Topwear,Shirts,White,Fall,2025,Formal,레귤러핏 100% 코튼 셔츠,cotton_shirt.jpg
+,Men,Apparel,Topwear,Shirts,Beige,Spring,2025,Casual,텍스처드 니트 쇼트 슬리브 폴로셔츠,sleeve_poloshirt.jpg
+,Men,Apparel,Topwear,Shirts,Navyblue,Fall,2025,Formal,소프트 레귤러핏 멜란지 셔츠,melange_shirt.jpg
+,Men,Apparel,Topwear,Tshirts,Blue,Summer,2025,Casual,100% 머서라이즈 코튼 티셔츠,cotton_tshirt.jpg
+,Men,Apparel,Topwear,Tshirts,Indigo,Summer,2025,Casual,쇼트 슬리브 티셔츠에 콘트라스트 스티치 디테일이 있는 티셔츠,stitch_tshirt.jpg
+,Men,Apparel,Topwear,Tshirts,Darkgreen,Summer,2025,Casual,쇼트 슬리브 코튼 블렌드 티셔츠,blended_tshirt.jpg
+,Men,Apparel,Bottomwear,Jeans,Beige,Fall,2025,Casual,슬림핏 텍스처드 팬츠,textured_pants.jpg
+,Men,Apparel,Bottomwear,Trousers,Charcoal,Fall,2025,Formal,토탈 룩 울 블렌드 팬츠,blended_pants.jpg
+,Men,Apparel,Bottomwear,Jeans,Grey,Fall,2025,Casual,테이퍼드핏 진,tapered_jeans.jpg
+,Men,Apparel,Bottomwear,Trousers,Black,Winter,2025,Formal,100% 울 수트 팬츠,suit_pants.jpg
+,Men,Apparel,Outerwear,Bomber Jackets,Black,Fall,2025,Casual,퀼팅 봄버 자켓,bomber_jackets.jpg
+,Men,Apparel,Outerwear,Jackets,Black,Fall,2025,Casual,워터리펠런트 토글 재킷,toggle_jacket.jpg
+,Men,Apparel,Outerwear,Blazers,Beige,Fall,2025,Formal,하운드 투스 블레이저,bomber_jacket.jpg
+,Men,Apparel,Outerwear,Overshirts,Brown,Fall,2025,Casual,스웨이드 레더 오버셔츠,lether_overshirt.jpg
+,Men,Apparel,Outerwear,Jackets,Grey,Fall,2025,Formal,WOOL BLEND BUTTONED JACKET,blended_jacket.jpg
+,Men,Footwear,Shoes,Formal Shoes,Brown,Fall,2025,Formal,스플릿 스웨이드 페니 로퍼,loafer.jpg
+,Men,Footwear,Casual Shoes,Casual Shoes,Beige,Spring,2025,Casual,소프트 스플릿 스웨이드 레더 부츠 스타일 슈즈,style_shoes.jpg
+,Men,Footwear,Casual Shoes,Casual Shoes,White,Spring,2025,Casual,스웨이드 스포츠 스니커즈,sports_sneakers.jpg
+,Men,Footwear,Shoes,Formal Shoes,Black,Winter,2025,Formal,나파 페니 로퍼,penny_loafer.jpg

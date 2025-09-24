@@ -1,0 +1,19 @@
+custom id,gender,masterCategory,subCategory,articleType,baseColour,season,year,usage,productDisplayName,Image
+,Men,Apparel,Topwear,Hoodies,Grey,Fall,2011,Sports  ,,grey_hoodie.jpg
+,Men,Apparel,Topwear,Tshirts ,White,Fall,2011,Casual,,white_tshirt.jpg
+,Men,Apparel,Topwear,Sweatshirts,Black ,Winter,2016,Sports  ,,black_sweatshirt.jpg
+,Men,Apparel,Topwear,Tshirts,Green,Fall,2011,Casual,,green_tshirt.jpg
+,Men,Apparel,Topwear,Polo Shirts,Light blue,Spring,2013,Casual,,polo_blue.jpg
+,Men,Apparel,Topwear,Shirts,White,Summer,2011,Casual,,white_shirt.jpg
+,Men,Apparel,Topwear,Sleveless Tees,Red,Summer,2012,Sports ,,red_tee_men.jpg
+,Men,Apparel,Bottomwear,Chinos ,Beige ,Spring,2013,Casual ,,beige_chinos.jpg
+,Men,Apparel,Bottomwear,Shorts,Navy,Summer,2012,Sports,,navy_shorts_men.jpg
+,Men,Apparel,Bottomwear,Joggers ,Black,Fall,2011,Sports  ,,joggers.jpg
+,Men,Apparel,Bottomwear,Jeans ,Blue  ,Winter,2013,Sports,,blue_jeans.jpg
+,Men,Apparel ,Bottomwear,Jeans ,Deep Blue ,Fall,2015,Casual,,deepblue_jeans.jpg
+,Men,Apparel,Outerwear,Zip-up Jackets ,Grey,Fall,2012,Sports  ,,zipup.jpg
+,Men,Apparel,Outerwear,Track Jackets ,White,Spring,2013,Sports,,white_track_jacket.jpg
+,Men,Footwear,Sports Shoes,Trainers ,White ,Fall ,2011,Sports  ,,trainers_men.jpg
+,Men,Footwear,Sports Shoes,Running Shoes,Grey,Spring,2013,Sports,,running_shoes.jpeg
+,Men,Footwear,Casual Shoes,Sneakers ,Black,Fall,2015,Sports  ,,black_sneakers_men.jpg
+,Men,Footwear,Casual Shoes,Sneakers ,Green,Fall,2011,Sports,,green_trainers.jpg

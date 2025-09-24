@@ -1,0 +1,20 @@
+custom id,gender,masterCategory,subCategory,articleType,baseColour,season,year,usage,productDisplayName,Image
+,Men,Apparel,Topwear,Shirts,Beige,Fall,2011,Casual,,beige_shirt_men.jpg
+,Men,Apparel,Topwear,Tshirts ,Yellow ,Fall,2011,Casual,,yellow_tshirt.jpg
+,Men,Apparel,Topwear,Sweaters,Grey,Winter,2016,Casual,,grey_sweater_men.jpg
+,Men,Apparel,Topwear,Shirts,Light blue,Spring,2013,Casual,,lightblue_shirt_men.jpg
+,Men,Apparel,Topwear,Polo Shirts ,Brown ,Summer,2011,Casual,,brown_polo.jpg
+,Men,Apparel,Topwear,Shirts ,Black ,Summer,2012,Casual,,black_shirt_men.jpg
+,Men,Apparel,Topwear,Shirts,Red,Summer ,2012,Casual,,red_shirt_men.jpg
+,Men,Apparel,Bottomwear,Jeans,Dark Blue,Fall,2013,Casual,,blue_jeans_men.jpg
+,Men,Apparel,Bottomwear,Trousers,Navy,Summer,2012,Casual ,,navy_trousers_men.jpg
+,Men,Apparel,Bottomwear,Chinos ,Olive,Spring,2011,Casual,,olive_chinos.jpg
+,Men,Apparel,Bottomwear,Dress Pants ,Black ,Spring ,2013,Casual,,black_dresspants_men.jpg
+,Men,Apparel ,Bottomwear,Cargo Trousers,Black ,Summer,2015,Casual,,cargo_pants.jpg
+,Men,Apparel,Outerwear,Leather Jackets,Black ,Fall,2011,Casual,,leather_jacket.jpg
+,Men,Apparel,Outerwear,Trench Coats ,Beige ,Winter,2013,Casual,,trench_coat.jpg
+,Men,Apparel,Outerwear,Blazers,Grey,Spring,2013,Casual,,grey_blazer_men.jpg
+,Men,Footwear,Casual Shoes,Sneakers ,White ,Fall,2011,Casual,,white_sneakers.jpg
+,Men,Footwear,Formal Shoes,Trainers ,White,Winter,2011,Casual,,trainers_men.jpg
+,Men,Footwear,Formal Shoes,Loafers ,Brown ,Spring,2013,Casual,,brown_loafers.jpg
+,Men,Footwear,Formal Shoes,Boat Shoes ,Blue ,Fall,2015,Casual,,blue_boats.jpg

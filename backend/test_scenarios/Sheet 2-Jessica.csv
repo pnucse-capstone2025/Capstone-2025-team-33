@@ -1,0 +1,22 @@
+custom id,gender,masterCategory,subCategory,articleType,baseColour,season,year,usage,productDisplayName,Image
+,Women,Apparel,Topwear,Sweaters,Beige,Fall,2011,Casual,,beige_sweater_women.jpg
+,Women,Apparel,Topwear,Shirts,White,Fall,2011,Casual,,white_shirt_women.jpg
+,Women,Apparel,Topwear,Sweaters,Grey,Winter,2016,Casual,,grey_sweater_women.jpg
+,Women,Apparel,Topwear,Shirts,Purple,Fall,2011,Casual,,purple_shirt_women.jpg
+,Women,Apparel,Topwear,Shirts,Light blue,Spring,2013,Casual,,lightblue_shirt_women.jpg
+,Women,Apparel,Topwear,Sleeveless Tops,Red,Summer,2011,Casual,,red_top.jpg
+,Women,Apparel,Topwear,Crop Tops,Pink,Summer,2012,Casual,,crop_top.jpg
+,Women,Apparel,Bottomwear,Skirts,Yellow,Spring,2013,Casual,,yellow_skirt.jpg
+,Women,Apparel,Bottomwear,Wide-leg Linen Pants,White,Summer,2012,Casual,,linen_pants.jpg
+,Women,Apparel,Bottomwear,Jeans,Deep Blue ,Fall,2011,Casual,,blue_jeans.jpg
+,Women,Apparel,Bottomwear,Tailored Trousers,Black ,Winter,2013,Casual,,trousers.jpg
+,Women,Apparel ,Bottomwear,Denim shorts,Blue,Summer ,2015,Casual,,denim_shorts.jpg
+,Women,Apparel,Outerwear,Light Cardigans,Beige ,Fall,2012,Casual,,light_cardigan.jpg
+,Women,Apparel,Outerwear,Leather Jackets,Black ,Fall,2011,Casual,,leather_jacket.jpg
+,Women,Apparel,Outerwear,Puffer Jackets,Black,Winter,2013,Casual,,puffer_jacket.jpg
+,Women,Apparel,Outerwear,Denim Jackets,White,Spring,2013,Casual,,denim_jacket.jpg
+,Women,Footwear,Casual Shoes,Sneakers,White,Summer,2011,Casual,,white_sneakers.jpg
+,Women,Footwear,Casual Shoes,Ballet flats ,Beige,Spring,2013,Casual,,ballet_flats.jpg
+,Women,Footwear,Casual Shoes,Ankle Boots ,Black,Winter,2015,Casual,,ankle_boots_black.jpg
+,Women,Footwear,Casual Shoes,Ankle Boots,Black,Fall,2011,Casual,,ankle_boots_black.jpg
+,Women,Footwear,Casual Shoes,Loafers,White ,Spring ,2011,Casual,,loafers.jpg
