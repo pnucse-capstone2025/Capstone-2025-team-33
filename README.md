@@ -156,7 +156,7 @@
 */docs/발표자료에 업로드했습니다.*
 
 #### 6.2. 시연 영상
-*(여기에 시연 영상 링크나 GIF를 추가하세요.)*
+* (https://youtube.com/watch?v=y29PbEt5UK8&si=wUS7sbWiiu4c3M2o)
 
 ---
 ### 7. 팀 구성
