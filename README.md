@@ -108,13 +108,13 @@
 
 #### 클라우드 환경 (Google Drive)
 
-* Google Drive의 MyTrive/Colab Notebooks/fashion_project/ 경로 아래에 다음과 같은 파일들이 있습니다.
+* Google Drive의 MyDrive/Colab Notebooks/fashion_project/ 경로 아래에 다음과 같은 파일들이 있습니다.
 
 * gemma-fashion-dpo-final-v3.zip: Colab에서 학습을 완료한 후 업로드할 AI 모델 파일입니다.
 
 * styles.csv: 모델이 참조하는 의류 메타데이터 파일입니다.
 
-* server_v6_5_dpo.ipynb: Google Colab에서 FastAPI 백엔드 서버를 실행하기 위한 Jupyter Notebook 파일입니다.
+* server_final.ipynb: Google Colab에서 FastAPI 백엔드 서버를 실행하기 위한 Jupyter Notebook 파일입니다.
 
 #### 로컬 개발 환경 (macOS)
 
@@ -153,10 +153,10 @@
 ### 6. 소개 자료 및 시연 영상
 
 #### 6.1. 프로젝트 소개 자료
-*(여기에 PPT 파일 링크나 이미지를 추가하세요.)*
+*/docs/발표자료에 업로드했습니다.*
 
 #### 6.2. 시연 영상
-*(여기에 시연 영상 링크나 GIF를 추가하세요.)*
+* (https://youtube.com/watch?v=y29PbEt5UK8&si=wUS7sbWiiu4c3M2o)
 
 ---
 ### 7. 팀 구성
